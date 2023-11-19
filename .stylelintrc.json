@@ -1,6 +1,8 @@
 {
-  "extends": [
-    "stylelint-config-standard"
-  ],
-  "ignoreFiles": "**/*.js"
+  "extends": "stylelint-config-idiomatic-order",
+  "ignoreFiles": "**/*.js",
+  "fix": true,
+  "rules": {
+    "declaration-property-value-no-unknown": true
+  }
 }
