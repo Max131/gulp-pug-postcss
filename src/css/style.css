@@ -1,0 +1,31 @@
+/* @import url("modern-normalize"); */
+@custom-media --mobile (width < 30rem);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  width: min(80ch, 100% - 2rem);
+  margin-inline: auto;
+
+  @media (--mobile) {
+    background-color: beige;
+  }
+
+  blockquote {
+    font-size: medium;
+  }
+}
+
+h1 {
+  color: royalblue;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-end;
+}
