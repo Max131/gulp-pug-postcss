@@ -5,9 +5,6 @@ import plumber from "gulp-plumber";
 import pug from "gulp-pug";
 
 import postcss from "gulp-postcss";
-import postcssImport from "postcss-import";
-import postcssPresetEnv from "postcss-preset-env";
-import autoprefixer from "autoprefixer";
 import stylelint from "gulp-stylelint";
 
 import { deleteSync } from "del";
@@ -29,8 +26,6 @@ const PATHS = {
   },
 };
 
-const POSTCSS_PLUGINS = [postcssImport(), postcssPresetEnv(), autoprefixer()];
-
 export const html = () => {
   return gulp
     .src([PATHS.html.src])
@@ -44,13 +39,7 @@ export const css = () => {
   return gulp
     .src([PATHS.css.src])
     .pipe(plumber())
-    .pipe(
-      postcss(POSTCSS_PLUGINS, {
-        features: {
-          "nesting-rules": true,
-        },
-      }),
-    )
+    .pipe(postcss())
     .pipe(
       stylelint({
         reporters: [
