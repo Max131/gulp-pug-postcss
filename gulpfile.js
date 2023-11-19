@@ -42,13 +42,12 @@ export const css = () => {
     .pipe(postcss())
     .pipe(
       stylelint({
-        reporters: [
-          {
-            formatter: "string",
-            console: true,
-          },
-        ],
-        fix: true,
+        // reporters: [
+        //   {
+        //     formatter: "string",
+        //     console: true,
+        //   },
+        // ],
       }),
     )
     .pipe(gulp.dest(PATHS.css.dest))
