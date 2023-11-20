@@ -1,4 +1,3 @@
-/* @import url("modern-normalize"); */
 @custom-media --mobile (width < 30rem);
 
 * {
@@ -10,8 +9,8 @@
 body {
   position: relative;
   width: min(80ch, 100% - 2rem);
+  margin: 0 auto;
   font-family: system-ui;
-  margin-inline: auto;
 
   @media (--mobile) {
     background-color: beige;
@@ -23,8 +22,8 @@ body {
 }
 
 h1 {
+  margin: 0 auto;
   color: royalblue;
-  margin-inline: auto;
   font-family: Poppins;
   font-size: 2.5rem;
 }
