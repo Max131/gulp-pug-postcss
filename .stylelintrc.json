@@ -21,7 +21,14 @@
     "property-no-unknown": true,
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-element-no-unknown": true,
-    "selector-type-no-unknown": true,
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignore": [
+          "custom-elements"
+        ]
+      }
+    ],
     "unit-no-unknown": true,
     "length-zero-no-unit": true,
     "function-name-case": "lower",
