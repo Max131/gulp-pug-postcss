@@ -2,16 +2,16 @@
 @custom-media --mobile (width < 30rem);
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: system-ui;
-  width: min(80ch, 100% - 2rem);
-  margin-inline: auto;
   position: relative;
+  width: min(80ch, 100% - 2rem);
+  font-family: system-ui;
+  margin-inline: auto;
 
   @media (--mobile) {
     background-color: beige;
@@ -24,6 +24,9 @@ body {
 
 h1 {
   color: royalblue;
+  margin-inline: auto;
+  font-family: Poppins;
+  font-size: 2.5rem;
 }
 
 .flex {
