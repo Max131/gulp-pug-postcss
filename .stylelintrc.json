@@ -9,7 +9,7 @@
     "font-family-no-duplicate-names": true,
     "block-no-empty": true,
     "comment-no-empty": true,
-    "media-query-no-valid": true,
+    "media-query-no-invalid": true,
     "no-irregular-whitespace": true,
     "annotation-no-unknown": true,
     "at-rule-no-unknown": true,
@@ -30,8 +30,6 @@
     "at-rule-empty-line-before": "always",
     "comment-empty-line-before": "always",
     "custom-property-empty-line-before": "always",
-    "declaration-empty-line-before": "always",
-    "rule-nested-empty-line-before": "always",
     "selector-pseudo-element-colon-notation": "double"
   }
 }
