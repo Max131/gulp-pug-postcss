@@ -37,6 +37,9 @@ devDependencies:
   gulp-postcss:
     specifier: ^9.0.1
     version: 9.0.1(postcss@8.4.31)
+  gulp-prettier:
+    specifier: ^6.0.0
+    version: 6.0.0
   gulp-pug:
     specifier: ^5.0.0
     version: 5.0.0
@@ -3567,6 +3570,14 @@ packages:
       - ts-node
     dev: true
 
+  /gulp-prettier@6.0.0:
+    resolution: {integrity: sha512-UzIivdVojdxC25VItzCGxKf+Psen8ZnroXnDZQUxyE+5wxKYZAR0B7c7VpjKvOgtx8EkbZJbB5okHE8lqKBAwg==}
+    engines: {node: '>=18'}
+    dependencies:
+      plugin-error: 2.0.1
+      prettier: 3.1.0
+    dev: true
+
   /gulp-pug@5.0.0:
     resolution: {integrity: sha512-NPnuj9hw35s78X/6Ho0vieKT/ipa0rh8cEAq3R4RWybZ7XEFPNez0O6kcxJipOLp3U6gjglsU1yiAR28bkuFkA==}
     engines: {node: '>=10.13.0'}
@@ -4874,6 +4885,13 @@ packages:
       extend-shallow: 3.0.2
     dev: true
 
+  /plugin-error@2.0.1:
+    resolution: {integrity: sha512-zMakqvIDyY40xHOvzXka0kUvf40nYIuwRE8dWhti2WtjQZ31xAgBZBhxsK7vK3QbRXS1Xms/LO7B5cuAsfB2Gg==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      ansi-colors: 1.1.0
+    dev: true
+
   /portscanner@2.2.0:
     resolution: {integrity: sha512-IFroCz/59Lqa2uBvzK3bKDbDDIEaAY8XJ1jFxcLWTqosrsc32//P4VuSB2vZXoHiHqOmx8B5L5hnKOxL/7FlPw==}
     engines: {node: '>=0.4', npm: '>=1.0.0'}
@@ -5282,6 +5300,12 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
+
+  /prettier@3.1.0:
+    resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /pretty-hrtime@1.0.3:

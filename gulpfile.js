@@ -6,6 +6,7 @@ import pug from "gulp-pug";
 
 import postcss from "gulp-postcss";
 import stylelint from "gulp-stylelint";
+import prettier from "gulp-prettier";
 
 import { deleteSync } from "del";
 
@@ -42,14 +43,15 @@ export const css = () => {
     .pipe(postcss())
     .pipe(
       stylelint({
-        // reporters: [
-        //   {
-        //     formatter: "string",
-        //     console: true,
-        //   },
-        // ],
+        reporters: [
+          {
+            formatter: "string",
+            console: true,
+          },
+        ],
       }),
     )
+    .pipe(prettier())
     .pipe(gulp.dest(PATHS.css.dest))
     .pipe(reload({ stream: true }));
 };
