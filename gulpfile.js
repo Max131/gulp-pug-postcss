@@ -72,7 +72,7 @@ export const clean = (done) => {
   done();
 };
 
-export const build = gulp.series(html, css, js);
+export const build = gulp.series(clean, html, css, js);
 
 export const watch = () => {
   gulp.watch("src/pages/**/*.pug", gulp.series("html"));
@@ -88,5 +88,5 @@ export const watch = () => {
   });
 };
 
-export const dev = gulp.series(build, watch);
+export const dev = gulp.series(clean, build, watch);
 export default dev;
