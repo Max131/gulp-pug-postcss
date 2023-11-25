@@ -10,7 +10,7 @@ body {
   position: relative;
   width: min(80ch, 100% - 2rem);
   margin: 0 auto;
-  font-family: system-ui;
+  font-family: "Inter", sans-serif;
 
   @media (--mobile) {
     background-color: beige;
@@ -24,7 +24,7 @@ body {
 h1 {
   margin: 0 auto;
   color: royalblue;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 2.5rem;
 }
 
