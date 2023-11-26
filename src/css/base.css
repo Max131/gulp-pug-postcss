@@ -28,9 +28,19 @@ h1 {
   font-size: 2.5rem;
 }
 
-img,
+img {
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: italic;
+  shape-margin: 1rem;
+  vertical-align: middle;
+}
+
 picture,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
