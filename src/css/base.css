@@ -5,9 +5,15 @@
 }
 
 html {
+  color-scheme: light dark;
   font:
-    normal 16px/1.6 "Inter",
+    normal 1.125rem/1.6 "Inter",
     system-ui;
+}
+
+main {
+  width: min(100% - 2rem, 80ch);
+  margin-inline: auto;
 }
 
 h1 {
@@ -15,4 +21,11 @@ h1 {
   color: royalblue;
   font-family: "Poppins";
   font-size: 2.5rem;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
 }
