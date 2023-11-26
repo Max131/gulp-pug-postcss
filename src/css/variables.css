@@ -1,0 +1,15 @@
+@custom-media --tablet (width >= 32rem);
+
+@custom-media --desktop (width >= 70rem);
+
+@custom-media --desktop-large (width >= 90rem);
+
+:root {
+  --background-color: #fff;
+  --text-color: #444;
+
+  @media (prefers-color-scheme: dark) {
+    --background-color: #222;
+    --text-color: #fff;
+  }
+}
