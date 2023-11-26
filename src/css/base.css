@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 main {
@@ -23,7 +23,7 @@ main {
 
 h1 {
   margin: 0 auto;
-  color: royalblue;
+  color: var(--color-accent);
   font-family: "Poppins";
   font-size: 2.5rem;
 }
@@ -43,4 +43,21 @@ svg {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+blockquote {
+  position: relative;
+  padding: 1rem;
+  isolation: isolate;
+  margin-block: 2rem;
+
+  &::before {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    color: #cecece22;
+    content: open-quote;
+    font-size: 10rem;
+    line-height: 0.5;
+  }
 }

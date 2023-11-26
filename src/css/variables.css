@@ -5,11 +5,22 @@
 @custom-media --desktop-large (width >= 90rem);
 
 :root {
-  --background-color: #fff;
-  --text-color: #444;
+  /* Basic Colors */
+  --color-1: 0, 0%, 100%; /* Light */
+  --color-2: 0, 0%, 14%; /* Dark */
+  --color-3: 270, 50%, 40%; /* Rebeccapurple */
+  --color-4: 260, 100%, 90%; /* Rebeccapurple Light */
+  --color-5: 0, 88%, 60%; /* Red */
+
+  /* Colors definitions */
+  --color-background: hsl(var(--color-1));
+  --color-text: hsl(var(--color-2));
+  --color-primary: hsl(var(--color-3));
+  --color-secondary: hsl(var(--color-4));
+  --color-accent: hsl(var(--color-5));
 
   @media (prefers-color-scheme: dark) {
-    --background-color: #222;
-    --text-color: #fff;
+    --color-background: hsl(var(--color-2));
+    --color-text: hsl(var(--color-1));
   }
 }
