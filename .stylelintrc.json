@@ -12,7 +12,12 @@
     "media-query-no-invalid": true,
     "no-irregular-whitespace": true,
     "annotation-no-unknown": true,
-    "at-rule-no-unknown": true,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["/^custom-media.+/"]
+      }
+    ],
     "function-no-unknown": true,
     "media-feature-name-no-unknown": true,
     "media-feature-name-value-no-unknown": true,
@@ -23,9 +28,7 @@
     "selector-type-no-unknown": [
       true,
       {
-        "ignore": [
-          "custom-elements"
-        ]
+        "ignore": ["custom-elements"]
       }
     ],
     "unit-no-unknown": true,
@@ -35,7 +38,6 @@
     "value-keyword-case": "lower",
     "at-rule-empty-line-before": "always",
     "comment-empty-line-before": "always",
-    "custom-property-empty-line-before": "always",
     "selector-pseudo-element-colon-notation": "double"
   }
 }
