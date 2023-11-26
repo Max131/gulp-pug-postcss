@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  modern-normalize:
-    specifier: ^2.0.0
-    version: 2.0.0
-
 devDependencies:
   '@babel/core':
     specifier: ^7.23.3
@@ -46,6 +41,9 @@ devDependencies:
   gulp-stylelint:
     specifier: ^13.0.0
     version: 13.0.0(stylelint@15.11.0)
+  modern-normalize:
+    specifier: ^2.0.0
+    version: 2.0.0
   postcss-font-magician:
     specifier: ^3.0.0
     version: 3.0.0(postcss@8.4.31)
@@ -4543,7 +4541,7 @@ packages:
   /modern-normalize@2.0.0:
     resolution: {integrity: sha512-CxBoEVKh5U4DH3XuNbc5ONLF6dQBc8dSc7pdZ1957FGbIO5JBqGqqchhET9dTexri8/pk9xBL6+5ceOtCIp1QA==}
     engines: {node: '>=6'}
-    dev: false
+    dev: true
 
   /ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
