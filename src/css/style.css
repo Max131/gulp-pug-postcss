@@ -1,34 +1,3 @@
-@custom-media --mobile (width < 30rem);
+@import url("./base.css");
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  position: relative;
-  width: min(80ch, 100% - 2rem);
-  margin: 0 auto;
-  font-family: "Inter", sans-serif;
-
-  @media (--mobile) {
-    background-color: beige;
-  }
-
-  blockquote {
-    font-size: medium;
-  }
-}
-
-h1 {
-  margin: 0 auto;
-  color: royalblue;
-  font-family: "Poppins";
-  font-size: 2.5rem;
-}
-
-.flex {
-  display: flex;
-  justify-content: flex-end;
-}
+@import url("./layout/index.css");
