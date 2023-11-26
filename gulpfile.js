@@ -43,6 +43,7 @@ export const css = () => {
     .pipe(postcss())
     .pipe(
       stylelint({
+        fix: true,
         reporters: [
           {
             formatter: "string",
