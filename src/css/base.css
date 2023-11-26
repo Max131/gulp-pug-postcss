@@ -11,6 +11,11 @@ html {
     system-ui;
 }
 
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 main {
   width: min(100% - 2rem, 80ch);
   margin-inline: auto;
